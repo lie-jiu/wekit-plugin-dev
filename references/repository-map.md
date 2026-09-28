@@ -33,7 +33,7 @@
 | 同仓库 `wauxiliary-plugin-dev/references/**` | 公开 | 已验证与 `docs/api` 逐字节相同（@`1f51603`，2026-09-22） |
 | 同仓库 `plugins/v126/**`、`plugins/v127/**`（75 个真实插件） | 公开 | 判断「某 API 是否真的存在于已发布 WA 版」的最强代理证据 |
 | `HdShare/WAuxiliary_Public` | 公开 | WA 自身开源演示 Hook + releases（最新 `1.2.7.r1418`）；**不含**插件引擎 |
-| `HdShare/WAuxiliary`（插件引擎运行时源码） | **404，私有/已删** | skill 自带的 `repository-map.md` 指向其 `me/hd/wauxv/plugin/PluginRuntime.kt`，公开渠道读不到 |
+| `HdShare/WAuxiliary`（插件引擎运行时源码） | **404，私有/已删** | 上表 `wauxiliary-plugin-dev` skill 的 `repository-map.md:27` 指向其 `me/hd/wauxv/plugin/PluginRuntime.kt`，公开渠道读不到 |
 | 已发布 APK | 公开 | ⚠️ 其内置 `readme.txt` 明示「勿逆向抄袭借鉴闭源代码」→ **不做反编译**；WA 侧不可验证项一律标 ❓ |
 
 ## 结论优先级
