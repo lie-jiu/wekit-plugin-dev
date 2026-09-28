@@ -46,6 +46,13 @@
 
 冲突时按此顺序取值，并在回答里说明采用了哪一份。任何来源都查不到的签名 → 不实现、不猜测，向用户说明缺口。
 
+## 许可与出处
+
+- 本 skill 的 WeKit 侧接口清单导自 **Ujhhgtg/WeKit（GPL-3.0）** 源码，故仓库按 GPL-3.0 发布（见 `LICENSE`）。
+- WAuxiliary 侧引用 **HdShare/WAuxiliary_Plugin（Apache-2.0）** 的公开 `docs/api/**`；引用其结论时保留该出处署名。
+- WAuxiliary 运行时为闭源，其 APK 自带「勿逆向抄袭借鉴闭源代码」声明：本 skill 不含任何反编译所得内容，WA 侧不可验证项一律标 ❓。
+- 与 WeKit/WAuxiliary 官方均无隶属关系；接口可用性以对应仓库当前源码为准。
+
 ## 刷新本 skill
 
 改动 `JavaEngine.kt` 或 shim 类后，重跑上表命令，比对 `references/api/*` 与 `references/we-wa-diff.md` 的行号与条目数（当前基线：18 全局量 / 106 函数名 / 141 注册 / 7 回调 / 9 shim 类）。
