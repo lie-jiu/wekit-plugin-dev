@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.prop text eol=lf
+*.java text eol=lf
+*.md text eol=lf
