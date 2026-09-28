@@ -1,6 +1,6 @@
 # 消息收发与分享
 
-全部注册于 `JavaEngine.kt`。列出的类型是 BSH 形参实际类型（`String`=java.lang.String，`long`/`bool`=原始类型）。⚠️ = 与 WA 文档不等价，先看 [../we-wa-diff.md#6](../we-wa-diff.md)。
+全部注册于 `JavaEngine.kt`。列出的类型是 BSH 形参实际类型（`String`=java.lang.String，`long`/`bool`=原始类型）。⚠️ = 与 WA 文档不等价，先看 [../porting-diff.md#6](../porting-diff.md)。
 
 ## 同名重复注册（BSH 按签名后写覆盖）
 

@@ -1,6 +1,6 @@
 # 联系人、群组、标签、验证与支付
 
-均注册于 `JavaEngine.kt`。⚠️ = 与 WA 文档不等价，见 [../we-wa-diff.md#6](../we-wa-diff.md)。
+均注册于 `JavaEngine.kt`。⚠️ = 与 WA 文档不等价，见 [../porting-diff.md#6](../porting-diff.md)。
 
 ## 身份与会话
 

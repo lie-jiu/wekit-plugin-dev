@@ -11,8 +11,8 @@
 - [method-contact.md](method-contact.md) — 好友、群、成员、标签、验证、转账。
 - [method-service.md](method-service.md) — 配置、HTTP、音频、朋友圈、日志/Toast、加载与快照。
 - [method-runtime.md](method-runtime.md) — Hook、DexKit、反射。
-- [wa-unported.md](wa-unported.md) — WA 有、WeKit 无的接口（移植时必须降级或删除）。
-- [../we-wa-diff.md](../we-wa-diff.md) — 差异表与迁移风险排序。
+- [unported.md](unported.md) — WA 有、WeKit 无的接口（移植时必须降级或删除）。
+- [../porting-diff.md](../porting-diff.md) — 差异表与迁移风险排序。
 
 ## 规模
 
@@ -45,6 +45,6 @@ BeanShell 侧调用按 Java 重载解析；数组字面量 `{a, b}` 可直接传
 ## 读取规则
 
 1. 只读本次任务涉及的页面，不要整目录灌进上下文。
-2. 页面里标 ⚠️ 的行是 WeKit 与 WA 文档**不等价**处，写代码前必须先看；标 ➕ 的是 WeKit 独有，标 ❌ 的见 wa-unported.md。
+2. 页面里标 ⚠️ 的行是 WeKit 与 WA 文档**不等价**处，写代码前必须先看；标 ➕ 的是 WeKit 独有，标 ❌ 的见 unported.md。
 3. 忽略参数（源码注明 "arg ignored"）意味着该位仅为兼容占位，不要指望它生效。
 4. 结构体成员只用 struct.md 列出的名字；`FriendInfo` 没有 `getUserName()`。

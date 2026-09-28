@@ -5,7 +5,7 @@
 ## 阻断级
 
 1. 出现 WeKit 不存在的回调名：`openSettings`、`onCreateChatItemMenu`、`onCreateHomePopMenu`、`onCreateConversationItemMenu`。写了永远不会执行 → 功能静默缺失。
-2. 出现 WeKit 不存在的函数：`addChatItemMenuItem`、`addHomePopMenuItem`、`addConversationItemMenuItem`、`getLogFile`、`sendMusicCard`（对照 [api/wa-unported.md](api/wa-unported.md)）。
+2. 出现 WeKit 不存在的函数：`addChatItemMenuItem`、`addHomePopMenuItem`、`addConversationItemMenuItem`、`getLogFile`、`sendMusicCard`（对照 [api/unported.md](api/unported.md)）。
 3. `getFriendDisplayName(a,b)` 按 WA 的 `(friendWxid, roomId)` 顺序传参（WeKit 相反）。
 4. `sendQuoteMsg(talker, msgId, text)` 按 WA 的 `(talker, content, msgId)` 传参。
 5. `sendText(talker, text, cb)` 里把 `cb` 的入参当 `Long` svrId 使用。
@@ -52,7 +52,7 @@
 问题（按严重度）
 - [阻断] main.java:42  onCreateChatItemMenu 在 WeKit 不会被调用
   影响：聊天菜单入口整块失效
-  依据：references/api/wa-unported.md；JavaEngine.kt getMethod 全量核对
+  依据：references/api/unported.md；JavaEngine.kt getMethod 全量核对
   建议：改用 onHandleMsg + 关键词触发，或作为 WeKit 本体功能开发
 
 已静态验证：<清单>

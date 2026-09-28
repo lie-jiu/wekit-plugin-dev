@@ -56,7 +56,7 @@ void onUnload() {
 }
 ```
 
-改参数或结果优先 `hookReplace`；在 WeKit 里 `hookBefore` 存在吞掉原方法的风险，见 [../we-wa-diff.md#7](../we-wa-diff.md)。
+改参数或结果优先 `hookReplace`；在 WeKit 里 `hookBefore` 存在吞掉原方法的风险，见 [../porting-diff.md#7](../porting-diff.md)。
 
 ## 宿主事件之外
 

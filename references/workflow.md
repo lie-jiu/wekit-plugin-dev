@@ -7,7 +7,7 @@
 | 新建 | 「写个插件」「做一个…」 | 填下方需求表 → 用 `assets/plugin-template/` 起目录 |
 | 修改 | 指向已有 `scripts_java/<id>/` | 读全部已 `loadJava` 的模块，再定位改动点 |
 | 调试 | 日志/现象/「不生效」 | 先确认加载链（目录/必需文件/`disabled.flag`/引擎是否重开），再看根因 |
-| 从 WA 移植 | 给出 WA 插件目录或 `.bshs` | 先跑 [api/wa-unported.md](api/wa-unported.md) + [we-wa-diff.md](we-wa-diff.md) 全量比对，输出「可直迁 / 需改写 / WeKit 不支持」三分类，再动手 |
+| 从 WA 移植 | 给出 WA 插件目录或 `.bshs` | 先跑 [api/unported.md](api/unported.md) + [porting-diff.md](porting-diff.md) 全量比对，输出「可直迁 / 需改写 / WeKit 不支持」三分类，再动手 |
 | 审核 | 「检查这个插件」 | 按 [review-checklist.md](review-checklist.md) 逐项 |
 
 ## 需求表（开工前必须填满）
@@ -40,7 +40,7 @@
 1. 加密 `.bshs` → 先用 WeKit 的「反编译 BeanShell 快照」还原源码。
 2. 扫出全部 `me.hd.wauxv.*` 引用与 WA 全局量，对照 [api/struct.md](api/struct.md)、[api/global.md](api/global.md) 判定可用成员。
 3. 扫出所有回调名：命中 `onCreate*Menu` / `openSettings` → 标记为 WeKit 不支持，向用户报告并给出替代交互。
-4. 扫出 WA-only 函数（[api/wa-unported.md](api/wa-unported.md)）与 18 条语义不等价项（[we-wa-diff.md#6](we-wa-diff.md)），逐条改写。
+4. 扫出 WA-only 函数（[api/unported.md](api/unported.md)）与 18 条语义不等价项（[porting-diff.md#6](porting-diff.md)），逐条改写。
 5. 依赖 `okhttp3`/`fastjson2` → 在交付说明里要求安装 `script-deps` 扩展包。
 6. 保留原 `config.prop` 键名与格式；若必须改变（如 `getStringSet` 编码不同），先征得用户同意并在 readme 里写迁移步骤。
 

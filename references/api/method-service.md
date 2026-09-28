@@ -1,6 +1,6 @@
 # 配置、网络、音频、朋友圈、日志与加载
 
-均注册于 `JavaEngine.kt`。⚠️ = 与 WA 文档不等价，见 [../we-wa-diff.md#6](../we-wa-diff.md)。
+均注册于 `JavaEngine.kt`。⚠️ = 与 WA 文档不等价，见 [../porting-diff.md#6](../porting-diff.md)。
 
 ## 配置（`config.prop`）
 

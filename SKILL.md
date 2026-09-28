@@ -1,6 +1,6 @@
 ---
 name: wekit-plugin-dev
-description: 当用户要求创建、修改、调试、迁移或审核 WeKit 脚本引擎 (Java) 插件——BeanShell 风格的 main.java、info.prop、scripts_java 目录、脚本内 Hook/消息/群管/朋友圈逻辑，或把 WAuxiliary（WA）插件移植到 WeKit 时使用。仅覆盖 WeKit 的 Java 脚本引擎，不覆盖 WeKit 内置 Kotlin 功能与 Python 插件通道。
+description: 当用户要求创建、修改、调试、移植或审核 WeKit 脚本引擎 (Java) 插件——BeanShell 风格的 main.java、info.prop、scripts_java 目录、脚本内 Hook/消息/群管/朋友圈逻辑，或把其他微信模块的同类插件移植到 WeKit 时使用。仅覆盖 WeKit 的 Java 脚本引擎，不覆盖 WeKit 内置 Kotlin 功能与 Python 插件通道。
 ---
 
 # WeKit 脚本插件开发
@@ -15,7 +15,7 @@ WeKit 的 Java 脚本引擎**不是**任何同类模块插件接口的完整子�
 
 ## 外部插件移植
 
-接到「把其他模块的插件搬到 WeKit」这类任务时，才读 [we-wa-diff.md](references/we-wa-diff.md)（缺失入口 / 签名不等价 / 结构体成员差异 / 迁移风险排序）与 [api/wa-unported.md](references/api/wa-unported.md)（WeKit 无对应实现的外部接口清单）。逐条核对后再动手，不要凭印象移植。
+接到「把其他模块的插件搬到 WeKit」这类任务时，才读 [porting-diff.md](references/porting-diff.md)（缺失入口 / 签名不等价 / 结构体成员差异 / 迁移风险排序）与 [api/unported.md](references/api/unported.md)（WeKit 无对应实现的外部接口清单）。逐条核对后再动手，不要凭印象移植。
 
 ## 执行流程
 
@@ -58,7 +58,7 @@ WeKit 的 Java 脚本引擎**不是**任何同类模块插件接口的完整子�
 ## Resources
 
 - [references/api/INDEX.md](references/api/INDEX.md) — 接口索引：回调、全局量、结构体、方法页（**日常开发只需这一支**）。
-- [references/we-wa-diff.md](references/we-wa-diff.md) — 外部插件接口与 WeKit 的逐条差异、迁移风险排序（仅移植任务时读）。
+- [references/porting-diff.md](references/porting-diff.md) — 外部插件接口与 WeKit 的逐条差异、迁移风险排序（仅移植任务时读）。
 - [references/runtime.md](references/runtime.md) — 生命周期、目录发现、类加载、快照格式、宿主伪装。
 - [references/workflow.md](references/workflow.md) — 需求拆解与完成标准模板。
 - [references/review-checklist.md](references/review-checklist.md) — 审核清单。

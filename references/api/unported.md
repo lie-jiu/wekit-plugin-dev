@@ -30,7 +30,7 @@
 
 ## 语义不等价（有同名函数，但别照抄）
 
-见 [../we-wa-diff.md#6](../we-wa-diff.md) 的 18 条，尤其是：`getFriendDisplayName` 参数序相反、`sendText` 回调 Boolean、`sendQuoteMsg` 参数序相反、`sendVoice` 毫秒、`sendImage/sendEmoji` 的 `msgId` 失效、`mp3ToSilk/silkToMp3` 的 `hz` 失效、`getGroupMemberList` 返回对象列表、`FriendInfo` 无 `getUserName()`、`reloadPlugin()` 不重跑正文、`log()` 落点不同、`pluginDir` 是 `File`。
+见 [../porting-diff.md#6](../porting-diff.md) 的 18 条，尤其是：`getFriendDisplayName` 参数序相反、`sendText` 回调 Boolean、`sendQuoteMsg` 参数序相反、`sendVoice` 毫秒、`sendImage/sendEmoji` 的 `msgId` 失效、`mp3ToSilk/silkToMp3` 的 `hz` 失效、`getGroupMemberList` 返回对象列表、`FriendInfo` 无 `getUserName()`、`reloadPlugin()` 不重跑正文、`log()` 落点不同、`pluginDir` 是 `File`。
 
 ## 反向清单（WeKit 独有，可用于补齐 WA 功能）
 

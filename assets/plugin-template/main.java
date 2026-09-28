@@ -14,7 +14,7 @@ String DEF_KEYWORD = "在吗";
 void onLoad() {
     log("loaded: " + pluginName + " v" + pluginVersion);
     // 需要 Hook 宿主方法时：DexKit 定位 -> 反射取 Member -> 注册并保存 handle。
-    // 注意 WeKit 中 hookBefore 可能吞掉原方法（见 references/we-wa-diff.md 第 7 节），
+    // 注意 WeKit 中 hookBefore 可能吞掉原方法（见 references/porting-diff.md 第 7 节），
     // 观察用 hookAfter，改参数/结果用 hookReplace。
     //
     // List cls = findClassList({"宿主里稳定的日志字符串"});

@@ -55,4 +55,4 @@
 
 ## 刷新本 skill
 
-改动 `JavaEngine.kt` 或 shim 类后，重跑上表命令，比对 `references/api/*` 与 `references/we-wa-diff.md` 的行号与条目数（当前基线：18 全局量 / 106 函数名 / 141 注册 / 7 回调 / 9 shim 类）。
+改动 `JavaEngine.kt` 或 shim 类后，重跑上表命令，比对 `references/api/*` 与 `references/porting-diff.md` 的行号与条目数（当前基线：18 全局量 / 106 函数名 / 141 注册 / 7 回调 / 9 shim 类）。
